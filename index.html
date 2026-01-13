@@ -44,28 +44,42 @@
       .menu-title {
         font-size: 1.4rem;
         font-weight: 600;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         text-align: center;
       }
 
       .menu-card {
         background: white;
-        border-radius: 15px;
-        padding: 15px 20px;
+        border-radius: 18px;
+        padding: 12px 15px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 15px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
       }
 
+      .drink-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+        border: 3px solid #dd2476;
+      }
+
+      .drink-info {
+        flex-grow: 1;
+      }
+
       .drink-name {
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 600;
+        margin-bottom: 4px;
       }
 
       .drink-price {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
         color: #dd2476;
       }
@@ -87,55 +101,63 @@
     </div>
 
     <div class="container">
-      <!-- Seção Bebidas -->
-      <div class="menu-section">
-        <div class="menu-title">🥤 Bebidas</div>
-
-        <div class="menu-card">
-          <div class="drink-name">Cerveja</div>
-          <div class="drink-price">R$ 8,00</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="drink-name">Refrigerante</div>
-          <div class="drink-price">R$ 6,00</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="drink-name">Água</div>
-          <div class="drink-price">R$ 4,00</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="drink-name">Suco Natural</div>
-          <div class="drink-price">R$ 10,00</div>
-        </div>
-      </div>
-
       <!-- Seção Drinks -->
       <div class="menu-section">
         <div class="menu-title">🍸 Drinks</div>
 
         <div class="menu-card">
-          <div class="drink-name">Caipirinha</div>
-          <div class="drink-price">R$ 15,00</div>
+          <img
+            src="img/tchay3cores.jpg"
+            alt="kit tchay 3 cores"
+            class="drink-img"
+          />
+          <div class="drink-info">
+            <div class="drink-name">kit tchay 3 cores - Copão 500ml</div>
+            <div class="drink-price">R$ 15,00</div>
+          </div>
         </div>
 
         <div class="menu-card">
-          <div class="drink-name">Mojito</div>
-          <div class="drink-price">R$ 18,00</div>
+          <img src="img/tchay.jpg" alt="Kit tradicional" class="drink-img" />
+          <div class="drink-info">
+            <div class="drink-name">Kit tradicional - Copão 500ml</div>
+            <div class="drink-price">R$ 10,00</div>
+          </div>
         </div>
 
         <div class="menu-card">
-          <div class="drink-name">Drink Especial da Casa</div>
-          <div class="drink-price">R$ 22,00</div>
+          <img src="img/caipirinha.jpg" alt="Caipirinha" class="drink-img" />
+          <div class="drink-info">
+            <div class="drink-name">Caipirinha - Copão 500ml</div>
+            <div class="drink-price">R$ 15,00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/capeta.jpg" alt="Capeta de morango" class="drink-img" />
+          <div class="drink-info">
+            <div class="drink-name">Capeta de morango - Copão 500ml</div>
+            <div class="drink-price">R$ 15,00</div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/capeta.jpg"
+            alt="Capeta de morango ZERO"
+            class="drink-img"
+          />
+          <div class="drink-info">
+            <div class="drink-name">
+              Capeta de morango SEM ALCOOL - Copo 300ml
+            </div>
+            <div class="drink-price">R$ 10,00</div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Rodapé -->
-    <div class="footer">
-      📲 Aponte a câmera para o QR Code e acesse nosso cardápio
-    </div>
+    <div class="footer">📲 Demais bebidas verifique os preços na Copa.</div>
   </body>
 </html>
